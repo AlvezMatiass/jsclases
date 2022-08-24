@@ -1,0 +1,30 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #111;
+}
+
+section {
+    display: flex;
+    flex-direction: column;
+}
+
+div {
+    margin: auto;
+    text-align: center;
+}
+
+p {
+    font-size: 1.5rem;
+    color: white;
+}
+
+a {
+    font-size: 1.3rem;
+    text-decoration: none;
+    color: white;
+}
