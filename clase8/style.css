@@ -1,0 +1,19 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: rgb(49, 49, 49);
+    color: white;
+}
+
+.p_color_rojo {
+    color: rgb(111, 50, 50);
+}
+
+.p_color_azul {
+    background-color: rgb(64, 64, 94);
+}
+
