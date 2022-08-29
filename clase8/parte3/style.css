@@ -1,0 +1,97 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: rgb(64, 64, 64);
+    color: white;
+}
+
+li {
+    list-style: none;
+    font-size: 1.2rem;
+}
+
+.conteiner_lista {
+    display: flex;
+}
+
+.conteiner_lista h4 {
+    font-size: 2rem;
+    font-weight: 900;
+    font-style: italic;
+    margin: 5rem auto 1rem auto;
+    border-bottom: 1px white;
+}
+
+.conteiner_encuesta {
+    display: flex;
+    flex-direction: column;
+}
+
+.texto_resultado {
+    display: flex;
+}
+
+.texto_resultado h4 {
+    font-size: 1.8rem;
+    font-weight: 500;
+    font-style: italic;
+    margin: 1.8rem auto;
+}
+
+label {
+    font-size: 1.4rem;
+    font-weight: 400;
+    font-style: italic;
+    padding: .2rem 0;
+}
+
+input, button, label {
+    margin: auto;
+}
+
+input {
+    border: none;
+    background-color: #111;
+    color: white;
+    width: 300px;
+    padding: .2rem .5rem;
+    font-size: 1.1rem;
+}
+
+button {
+    width: 160px;
+    margin: .3rem auto;
+    padding: .2rem .5rem;
+    font-size: 1.2rem;
+    font-weight: 700;
+    border: 1px;
+    cursor: pointer;
+}
+
+.contenedor_resultado {
+    display: flex;
+}
+
+#lista {
+    margin: auto;
+    background-color: #111;
+    padding: 1rem 1rem .5rem 1rem;
+    width: 320px;
+}
+
+#lista p {
+    font-size: 1.4rem;
+    font-weight: 400;
+    font-style: italic;
+}
+
+br {
+    width: 100%;
+    height: 2px;
+    background-color: aliceblue;
+}
