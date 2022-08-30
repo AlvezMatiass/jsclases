@@ -1,21 +1,35 @@
 
+let boton = document.getElementById("btn");
 
-function agregar(){
-
+boton.addEventListener("click" , function(){
     let producto = document.getElementById("producto");
-    let lista = document.getElementById("lista");
     let precio = document.getElementById("precio");
+    let lista = document.getElementById("lista");
 
-    let texto = document.createElement("p");
-    texto.innerText = "Producto: " + producto.value;
-    lista.append(texto);
+    let li = document.createElement("li");
 
-    let texto_precio = document.createElement("p");
-    texto_precio.innerText = "Precio: " + precio.value;
-    lista.append(texto_precio);
+    li.innerHTML = `<p> Producto: ${producto.value}</p>
+                    <p> Precio: ${precio.value}</p>
+                    <button class="borrar">Eliminar</button>`;
 
-    let separar = document.createElement("p");
-    separar.innerText = "-----------------------------------------------";
-    lista.append(separar);
+    lista.append(li)
+
+    let boton_borrar = document.querySelectorAll(".borrar");
+
+    console.log( boton_borrar);
+
+    for(let boton of boton_borrar){
+        boton.addEventListener("click" , borrar_elemento);
+    }
+
+})
+
+function borrar_elemento(e){
+
+    let hijo = e.target;
+    let padre = hijo.parentNode;
+    let abuelo = padre.parentNode;
+
+    padre.remove();
 
 }
