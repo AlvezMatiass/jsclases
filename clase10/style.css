@@ -1,0 +1,24 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+}
+
+#formulario {
+    display: flex;
+    flex-direction: column;
+    padding: 2rem 5rem;
+}
+
+label {
+    margin: .5rem 0;
+}
+
+button {
+    margin: .8rem auto;
+    max-width: 200px;
+}
